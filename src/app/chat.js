@@ -24,7 +24,7 @@ export default function Chat() {
     try {
       // Initialize Google Gemini AI
       const genAI = new GoogleGenerativeAI(API_KEY);
-      const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+      const model = genAI.getGenerativeModel({ model: process.env.NEXT_PUBLIC_GOOGLE_AI_MODEL });
 
       // Enterprise-Specific Prompting
       const enterprisePrompt = `

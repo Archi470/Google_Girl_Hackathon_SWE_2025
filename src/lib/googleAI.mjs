@@ -13,7 +13,7 @@ export async function extractDetailsFromPrompt(prompt) {
   `;
 
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = genAI.getGenerativeModel({ model: process.env.NEXT_PUBLIC_GOOGLE_AI_MODEL });
     const result = await model.generateContent(aiPrompt);
 
     // Get response text

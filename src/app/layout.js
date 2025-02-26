@@ -4,7 +4,7 @@ import '../styles/globals.css';
 
 
 export const metadata = {
-  title: "Next.js 15 + Tailwind",
+  title: "Google Girl Hackathon 2025",
   description: "Tailwind setup in Next.js 15",
 };
 

@@ -4,6 +4,7 @@
 1. **Create a `.env.local` file** in the root directory of your project and add the following environment variables:  
    - Firebase API keys  
    - Google AI Key  
+  - AI Model: `gemini-1.5-pro`  
 
 ### **Firebase Authentication Setup**  
 2. **Enable the Email/Password Sign-in Method** in Firebase:  
