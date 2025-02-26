@@ -20,10 +20,10 @@ export async function extractDetailsFromPrompt(prompt) {
     let responseText = await result.response.text();
     console.log("Raw AI Response:", responseText); // Debugging output
 
-    // ✅ Remove markdown formatting (e.g., ```json ... ```)
+    //  Remove markdown formatting (e.g., ```json ... ```)
     responseText = responseText.replace(/```json|```/g, "").trim();
 
-    // ✅ Parse JSON safely
+    //  Parse JSON safely
     let extractedData;
     try {
       extractedData = JSON.parse(responseText);

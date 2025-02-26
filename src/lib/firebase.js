@@ -20,7 +20,7 @@ const storage = getStorage(app);
 
 export { auth, db, storage };
 
-// ✅ Function to save extracted details to Firestore
+//  Function to save extracted details to Firestore
 export async function saveInvoiceData(invoice_no, emp_name) {
   try {
     const docRef = doc(db, "invoices", invoice_no); // Store by invoice_no

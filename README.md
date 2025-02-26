@@ -30,5 +30,16 @@
    - The project utilizes **Gemini-1.5-Pro** for AI-based document processing and automation.  
    - Ensure your API key is configured in `.env.local`.  
 
+### **AI Processing Logic**  
+6. **Extracting Invoice Details**  
+   - The AI extracts the employee name and invoice number from the given text.  
+    
+     ```json  
+     {"invoice_no": null, "emp_name": null}  
+     ```  
+   - Example Input:  
+     THE invoice_no is 123 and emp_name is abc.
+     
+
 ### **Additional Resources**  
 - Refer to the [Next.js Documentation](https://nextjs.org/docs) for framework guidance.
