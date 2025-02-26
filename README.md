@@ -108,7 +108,7 @@ Access the deployed version for image-based data entry:
 🔗 **[Live Demo](http://bit.ly/4gWcnaP)**
 
 ### **Invoice Example**
-![Invoice](images/invoice.png)
+images/invoice.png
 
 ### **Contributing**
 1. Fork the repository
