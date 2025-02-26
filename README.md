@@ -50,6 +50,9 @@ The AI extracts the employee name and invoice number from the given text.
 THE invoice_no is 123 and emp_name is abc.
 ```
 
+### **Screenshot of website**
+![Screenshot of website](images/data_entry_from_text_file.png)
+
 ---
 
 ## Data Entry from Image File (Deployed)
@@ -103,6 +106,9 @@ Make sure to set up the following environment variables:
 ### **Deployment & Live Demo**
 Access the deployed version for image-based data entry:  
 🔗 **[Live Demo](http://bit.ly/4gWcnaP)**
+
+### **Invoice Example**
+![Invoice](images/invoice.png)
 
 ### **Contributing**
 1. Fork the repository
