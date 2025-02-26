@@ -51,7 +51,7 @@ THE invoice_no is 123 and emp_name is abc.
 ```
 
 ### **Screenshot of website**
-![Screenshot of website](images/data_entry_from_text_file.png)
+![Screenshot of data_entry_from_text_file website](images/data_entry_from_text_file.png)
 
 ---
 
@@ -109,6 +109,11 @@ Access the deployed version for image-based data entry:
 
 ### **Invoice Example**
 images/invoice.png
+
+
+### **Screenshot of website**
+![Screenshot of data_entry_from_image_file website](images/data_entry_from_image_file.png)
+
 
 ### **Contributing**
 1. Fork the repository
