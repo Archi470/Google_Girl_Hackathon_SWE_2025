@@ -1,6 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 import { getStorage } from "firebase/storage";
+import { db } from "./firebase";
 import { getFirestore, doc, setDoc } from "firebase/firestore";
 
 const firebaseConfig = {
@@ -15,7 +16,6 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const db = getFirestore(app);
 const storage = getStorage(app);
 
 export { auth, db, storage };
@@ -23,6 +23,9 @@ export { auth, db, storage };
 //  Function to save extracted details to Firestore
 export async function saveInvoiceData(invoice_no, emp_name) {
   try {
+    if (!invoice_no) {
+      throw new Error("Invalid invoice number");
+    }
     const docRef = doc(db, "invoices", invoice_no); // Store by invoice_no
     await setDoc(docRef, { invoice_no, emp_name, timestamp: new Date() });
 

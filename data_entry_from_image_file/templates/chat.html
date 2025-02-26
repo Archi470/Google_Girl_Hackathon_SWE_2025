@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="chat-container">
+    <div class="chat-messages" id="chatMessages">
+        <div class="message bot">
+            <div class="message-content bg-secondary">
+                Hello! How can I assist you today?
+            </div>
+        </div>
+    </div>
+    
+    <div class="chat-input mt-3">
+        <div class="input-group">
+            <input type="text" class="form-control" id="messageInput" 
+                   placeholder="Type your message..." onkeypress="if(event.key === 'Enter') sendMessage()">
+            <button class="btn btn-primary" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+{% endblock %}
